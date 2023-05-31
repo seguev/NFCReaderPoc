@@ -23,5 +23,13 @@ struct Factory {
         return alert
     }
     
+    static func errorAlertController (error:Error) -> UIAlertController {
+        
+            let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
+        return alert
+    }
+    
     
 }

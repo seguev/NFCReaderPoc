@@ -17,6 +17,7 @@
 		60F5DFD42A27BE7D008BACF1 /* NFCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F5DFD32A27BE7D008BACF1 /* NFCTableViewController.swift */; };
 		60F5DFD62A27BF5B008BACF1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F5DFD52A27BF5B008BACF1 /* Item.swift */; };
 		60F5DFD82A27C228008BACF1 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F5DFD72A27C228008BACF1 /* Factory.swift */; };
+		60F5DFDB2A27D6BE008BACF1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F5DFDA2A27D6BE008BACF1 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		60F5DFD32A27BE7D008BACF1 /* NFCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTableViewController.swift; sourceTree = "<group>"; };
 		60F5DFD52A27BF5B008BACF1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		60F5DFD72A27C228008BACF1 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		60F5DFD92A27C91F008BACF1 /* NFCReaderPoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCReaderPoc.entitlements; sourceTree = "<group>"; };
+		60F5DFDA2A27D6BE008BACF1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +67,14 @@
 		60F5DFB92A27BDF7008BACF1 /* NFCReaderPoc */ = {
 			isa = PBXGroup;
 			children = (
+				60F5DFD92A27C91F008BACF1 /* NFCReaderPoc.entitlements */,
 				60F5DFBA2A27BDF7008BACF1 /* AppDelegate.swift */,
 				60F5DFBC2A27BDF7008BACF1 /* SceneDelegate.swift */,
 				60F5DFD12A27BE34008BACF1 /* Constants.swift */,
 				60F5DFD72A27C228008BACF1 /* Factory.swift */,
 				60F5DFC02A27BDF7008BACF1 /* Main.storyboard */,
 				60F5DFD32A27BE7D008BACF1 /* NFCTableViewController.swift */,
+				60F5DFDA2A27D6BE008BACF1 /* Model.swift */,
 				60F5DFD52A27BF5B008BACF1 /* Item.swift */,
 				60F5DFC62A27BDF7008BACF1 /* Assets.xcassets */,
 				60F5DFC82A27BDF7008BACF1 /* LaunchScreen.storyboard */,
@@ -157,6 +162,7 @@
 				60F5DFD62A27BF5B008BACF1 /* Item.swift in Sources */,
 				60F5DFBD2A27BDF7008BACF1 /* SceneDelegate.swift in Sources */,
 				60F5DFD82A27C228008BACF1 /* Factory.swift in Sources */,
+				60F5DFDB2A27D6BE008BACF1 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NFCReaderPoc/NFCReaderPoc.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TAJ6K5RR87;
@@ -329,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NFCReaderPoc/NFCReaderPoc.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TAJ6K5RR87;
