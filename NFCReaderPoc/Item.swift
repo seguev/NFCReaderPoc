@@ -9,8 +9,13 @@ import UIKit
 
 struct Item : Hashable {
     let name : String
+    let uuid = UUID()
+    
+    static func ==(lhs: Item, rhs: Item) -> Bool {
+        return lhs.uuid == rhs.uuid
+    }
     
     func hash(into hasher: inout Hasher) {
-        hasher.combine(name)
+        hasher.combine(uuid)
     }
 }
